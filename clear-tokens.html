@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clear Tokens</title>
+</head>
+<body>
+    <h1>Clearing Authentication Tokens</h1>
+    <p>This will clear any invalid JWT tokens from your browser.</p>
+    <button onclick="clearTokens()">Clear Tokens</button>
+    <button onclick="goToApp()">Go to Chat App</button>
+    
+    <script>
+        function clearTokens() {
+            localStorage.removeItem('token');
+            alert('Tokens cleared! You can now try logging in again.');
+        }
+        
+        function goToApp() {
+            window.location.href = 'http://localhost:5173';
+        }
+    </script>
+</body>
+</html>
