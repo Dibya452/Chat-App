@@ -63,5 +63,5 @@ app.use("/api/message", messagerouter);
 //Connect to database
 await connectDB();
 
-const PORT =process.env.PORT || 5002;
+const PORT ="https://chat-app-backend-lfw4.onrender.com";
 server.listen(PORT, ()=>console.log("server is running on port:"+ PORT));
